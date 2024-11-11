@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+            body{
+                height:2000px;
+            }
+            .grid{
+                display:grid;
+        
+                grid-template-columns:1fr 1fr 1fr 1fr;
+                column-gap: 20px;
+                row-gap: 90px;
+                
+                margin:0;
+           
+                
+            }
+
+.img2{
+    width:270px;
+    height:180px;
+}
+
+.profileimg{
+    width:40px;
+    height:40px;
+    border-radius:20px;
+}
+.profile-container{
+   display:flex;
+   margin-top:10px;
+
+}
+.data{
+    margin-left:10px;
+    line-height: 20px;;
+}
+
+.header{
+    width:100%;
+    height:70px;
+    border-style:solid;
+    border-width:1px;
+    margin-bottom:20px;
+    display:flex;
+    
+    
+    border-bottom-width: 1px;
+    border-bottom-style:solid;
+    border-bottom-color:black;
+    
+    
+    
+
+}
+.hamburger{
+    width:40px;
+    height:40px;
+}
+.youtube{
+    width:80px;
+    height:80px;
+}
+.leftside{
+    display:flex;
+    align-items:center;
+    flex-direction: row;
+
+    
+}
+.logo{
+margin-right:20px;
+}
+.middle{
+    margin-left:300px;
+    display:flex;
+    flex:1;
+    
+    align-items: center;
+}
+.search-bar{
+    flex: 1;
+    display:flex;
+    margin-left:60px;
+   
+    padding-left:10px;
+    height:35px;
+    border-style:solid;
+    border-width: 1px;
+    border-color:gray;
+    border-radius: 2px;
+    box-shadow:inset 1px 2px 3px rgb(0 ,0, 0, 0.15 );
+    width:0;
+
+    
+    
+  
+    
+
+
+}
+.butt{
+    width:20px;
+    padding-top:5px;
+    padding-bottom:5px;;
+    align-items: center;
+    
+}
+.butt1{ 
+    width:60px;
+   
+
+}
+.search-bar::placeholder{
+    font-family:Arial;
+    font-size:20px;
+   padding-left: 20px;;
+}
+
+.voice-search{
+ margin-left:15px;  
+}
+.voice-icon{
+    
+    width:20px;
+}
+.voice-butt{
+    padding:7px 10px 5px 10px;
+    border-radius:20px;
+    border:none
+}
+
+.rightside{
+   
+    display:flex;
+    flex:1;
+    margin-left:270px;
+    margin-right:20px;
+    align-items: center;
+    justify-content: space-between ;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    flex-shrink:0;
+}
+    
+
+.appsimg{
+    width:30px;
+}
+
+.musicimg{
+    width:30px;
+}
+
+.notiimg,.exploreimg{
+    width:30px;
+}
+
+.catimg{
+width:30px;
+height:30px;
+border-radius:15px;
+object-fit: cover;
+}
+
+.apps,.prof{
+    position:relative;
+    
+}
+.create{
+    position:absolute;
+    background-color: black;
+    color:white;
+    padding-left: 4px;
+    padding-right: 4px;
+    bottom:-30px;
+    
+}
+.apps .create,
+.noti .create,
+.prof .create{
+    opacity:0;
+    
+   
+}
+.apps:hover .create,
+.noti:hover .create,
+.prof:hover .create{
+    opacity:1;
+}
+
+.noti{
+    position:relative;
+}
+.number{
+    position:absolute;
+    top:0;
+    right:0;
+    background-color: rgb(194, 21, 21);
+    padding-left:5px;
+    padding-right:5px;
+    border-radius:10px;
+}
+
+.main{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    
+}
+body{
+    margin:0;
+    padding-top:80px;
+    padding-left: 96px;
+    padding-right:24px;
+    background-color:red;
+}
+
+        </style>
+
+    </head>
+    <body>
+
+        <div class="header">
+            <div class="leftside">
+                <div class="logo">
+                <img class="hamburger" src="icons/hamburger-menu.svg">
+                
+                </div>
+                <div><img class="youtube" src="icons/youtube-logo.svg"></div>
+
+            </div>
+           
+            
+            <div class="middle">
+                <div class="input">
+                    <input class="search-bar" type="text" placeholder="search">                                      
+                </div>
+                <div class="search"><button class="butt1" ><img class="butt" src="icons/search-logo.svg"></button></div>
+                <div class="voice-search"><button class="voice-butt"><img class="voice-icon" src="icons/voice-search-icon.svg"></div>
+                </button>            </div>
+
+
+                <div class="rightside">
+                    <div class="apps"><img class="appsimg" src="icons/youtube-apps.svg"> 
+                    <div class="create"> Create </div> </div>
+                    <div><img class="musicimg" src="icons/youtube-music.svg"></div>
+                    <div class="noti"><img class="notiimg" src="icons/notifications-logo.svg" >
+                    <div class="number">3</div>
+                    <div class="create">Notifications</div>
+                    </div>
+                    <div><img class="exploreimg" src="icons/explore.svg"> </div>
+                    <div class="prof"><img class="catimg" src="cat.jpg" >
+                    <div class="create">profile</div>
+                    </div>
+                </div>
+
+
+        </div>
+
+
+        <div class="grid">
+
+            <div class="main">
+
+                <div class="cat">
+                    <img src="cat.jpg">
+                    <div class="profile-container">
+                        <div class="profile"><img class="profileimg" src="cat.jpg"></div>
+                        <div class="data">
+                            <div>I am  a cat </div>
+                            <div>36M. views</div>
+                            <div>Hii i a harsha ready to design a webpage</div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="cat">
+                    <img class="img2" src="cat2.jpg">
+                    
+                </div>
+                <div class="cat"><img src="cat.jpg"></div>
+                <div class="cat2"><img class="img2" src="cat2.jpg"></div>
+                <div><img class="img1" src="cat.jpg"></div>
+                <div class="cat2"><img class="img2" src="cat2.jpg"></div>
+                <div><img src="cat.jpg"></div>
+                <div class="cat2"><img class="img2" src="cat2.jpg"></div>
+                <div><img src="cat.jpg"></div>
+                <div class="cat2"><img class="img2" src="cat2.jpg"></div>
+                <div><img src="cat.jpg"></div>
+                <div class="cat2"><img class="img2" src="cat2.jpg"></div>
+    
+
+            </div>
+
+            
+            
+
+
+        </div>
+    </body>
+</html>

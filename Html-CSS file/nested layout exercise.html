@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        .profile-card {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            width: 400px;
+            border: 1px solid #e1e1e1;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+        .profile-image {
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+        }
+        .profile-info {
+            flex-grow: 1;
+            margin-left: 10px;
+        }
+        .profile-info .name {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 3px;
+        }
+        .profile-info .role, .profile-info .status {
+            color: gray;
+            font-size: 14px;
+            margin: 2px 0;
+        }
+        .follow-button {
+            padding: 8px 16px;
+            background-color: #1DA1F2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <img src="cat2.jpg" alt="Profile Picture" class="profile-image">
+        <div class="profile-info">
+            <div class="name">oliver</div>
+            <div class="role">the cat</div>
+            <div class="status">Popular</div>
+        </div>
+        <button class="follow-button">Follow</button>
+    </div>
+
+</body>
+</html>
